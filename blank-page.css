@@ -1,0 +1,26 @@
+@page blank-page {
+    @top-left {
+        content: "" !important;
+        border-bottom: none !important;
+    }
+    @top-right {
+        content: "" !important;
+        border-bottom: none !important;
+    }
+    @top-center {
+        content: "" !important;
+        border-bottom: none !important;
+    }
+    @bottom-left {
+        content: "" !important;
+        border-bottom: none !important;
+    }
+    @bottom-left {
+        content: "" !important;
+        border-bottom: none !important;
+    }
+    @bottom-left {
+        content: "" !important;
+        border-bottom: none !important;
+    }
+}

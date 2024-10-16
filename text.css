@@ -1,0 +1,32 @@
+*[class ~="map/map"][numbering ^="deep"] *[class ~="topic/topic"][is-chapter]:not([is-part])> *[class ~="topic/title"]:before {
+    content: counter(chapter) " ";
+    font-size: 5rem;
+}
+
+*[class ~="map/map"][numbering ^="deep"] *[class ~="topic/topic"][is-chapter]:not([is-part])> *[class ~="topic/title"] {
+    display: block;
+    font-size: 22pt;
+    text-align: right;
+    border-bottom: solid black;
+    margin-top: 30pt;
+    margin-bottom: 24pt;
+}
+
+*[class ~= 'map/map'][numbering ^= 'deep'] *[class ~= 'topic/topic'][is-chapter]:not([is-part]) > *[class ~= "topic/title"]:before,
+*[class ~= 'map/map'][numbering ^= 'deep'] *[class ~= 'topic/topic'][is-chapter]:not([is-part]) *[class ~= "topic/topic"] > *[class ~= 'topic/title']:before {
+    content: counters(chapter-and-section, ".") " ";
+}
+
+*[class ~= 'map/map'][numbering ^= 'deep'] *[class ~= 'topic/topic'][is-chapter]:not([is-part]) > *[class ~= "topic/title"] {
+    font-size: 16pt;
+    margin-top: 24pt;
+    margin-bottom: 12pt;
+    line-height: 14.4pt;
+}
+
+*[class ~= 'map/map'][numbering ^= 'deep'] *[class ~= 'topic/topic'][is-chapter]:not([is-part]) *[class ~= "topic/topic"] > *[class ~= 'topic/title'] {
+    font-size: 14pt;
+    margin-top: 18pt;
+    margin-bottom: 6pt;
+    line-height: 14.4pt;
+}

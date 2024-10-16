@@ -1,0 +1,9 @@
+*[class ~= "topic/xref"][href]:after,
+*[class ~= "tpopic/link"][href]:after {
+    content: none !important;
+}
+
+*[class ~= "topic/xref"],
+*[class ~= "topic/link"] {
+    color: black;
+}

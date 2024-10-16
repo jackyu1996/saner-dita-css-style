@@ -1,0 +1,35 @@
+*[class~="map/map"]:after {
+    page: back-cover;
+    content: "";
+}
+
+@page back-cover {
+    @top-left {
+        content: none;
+    }
+
+    @top-right {
+        content: none;
+    }
+
+    @top-center {
+        content: none;
+    }
+
+    @bottom-left {
+        content: none;
+    }
+
+    @bottom-center {
+        content: none;
+    }
+
+    @bottom-right {
+        content: none;
+    }
+
+    background-image: url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

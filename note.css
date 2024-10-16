@@ -1,0 +1,18 @@
+*[outputclass ~= "note"] {
+    border: black solid;
+}
+
+*[class ~= "topic/note"] {
+    border-top: solid black;
+    border-bottom: solid black;
+}
+
+*[class ~= "topic/note"][type = "other"][othertype = "Forbidden"] {
+    background-image: url("../images/forbidden.svg");
+    background-size: 16pt;
+    padding-left: 10pt;
+}
+
+*[class ~= "topic/note"][type = "other"][othertype = "Forbidden"] > *[class ~= "note__title"] {
+    content: "";
+}

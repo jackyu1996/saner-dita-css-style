@@ -1,0 +1,16 @@
+@import "blank-page.css";
+
+*[class~="toc/title"][empty]:lang(zh-cn):before {
+    content: "目录";
+    display: block;
+    font-size: 22pt;
+    margin-top: 40pt;
+    margin-bottom: 24pt;
+    border-bottom: black solid;
+}
+
+*[class~="toc/toc"]:after {
+    content: "";
+    display: block;
+    page: blank-page;
+}

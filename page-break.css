@@ -1,0 +1,6 @@
+*[class ~= "topic/table"] {
+    page-break-inside: avoid;
+}
+*[class ~= "topic/image"] {
+    page-break-inside: avoid;
+}

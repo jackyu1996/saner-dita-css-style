@@ -1,0 +1,8 @@
+@page {
+    size: A4;
+    margin: 2cm;
+}
+
+*[outputclass = "wide"] {
+    page: wide-page !important;
+}

@@ -1,0 +1,83 @@
+*[class~="map/map"][numbering ^="deep"] *[class~="topic/topic"][is-chapter]:not([is-part])>*[class~="topic/title"] {
+    string-set: chaptertitle counter(chapter) " " content();
+}
+
+@page {
+    @top-center {
+        content: string(chaptertitle);
+        border-bottom: 1px solid black;
+        displa: block;
+        vertical-align: bottom;
+    }
+}
+
+@page :left {
+    @bottom-left {
+        content: counter(page);
+        display: block;
+        border-top: 1px solid black;
+        vertical-align: top;
+    }
+}
+
+@page :right {
+    @bottom-right {
+        content: counter(page);
+        display: block;
+        border-top: 1px solid black;
+        vertical-align: top;
+    }
+}
+
+@page table-of-contents {
+    @bottom-right {
+        content: "目录";
+        display: block;
+        border-top: 1px solid black;
+        vertical-align: top;
+    }
+}
+
+@page table-of-contents:left {
+    @bottom-left {
+        content: counter(page, lower-roman);
+    }
+}
+
+@page table-of-contents:right {
+    @bottom-right {
+        content: counter(page, lower-roman);
+    }
+}
+
+@page :left, table-of-contents:first:left, chapter:first:left, table-of-contents:left {
+    @top-left {
+        content: "";
+        displa: block;
+        border-bottom: 1px solid black;
+        vertical-align: bottom;
+    }
+
+    @top-right{
+        content: "";
+        displa: block;
+        border-bottom: 1px solid black;
+        vertical-align: bottom;
+    }
+}
+
+@page :right, table-of-contents:first:right, chapter:first:right, table-of-contents:right {
+    @top-left {
+        content: "";
+        displa: block;
+        border-bottom: 1px solid black;
+        vertical-align: bottom;
+    }
+
+    @top-right{
+        content: "";
+        displa: block;
+        border-bottom: 1px solid black;
+        vertical-align: bottom;
+    }
+}

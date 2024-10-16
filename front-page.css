@@ -1,0 +1,21 @@
+@import "blank-page.css";
+
+@page front-page {
+    background-image: url("");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    @bottom-center {
+        content: none;
+    }
+}
+
+*[class~="front-page/front-page-title"]>*[class~="topic/title"] {
+    content: "";
+}
+
+*[class~="front-page/front-page-title"]:after {
+    content: "";
+    display: block;
+    page: blank-page;
+}
